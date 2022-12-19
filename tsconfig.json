@@ -1,6 +1,48 @@
 {
-  "extends": "expo/tsconfig.base",
-  "compilerOptions": {
-    "strict": true
-  }
+    "extends": "expo/tsconfig.base",
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "es2017",
+        "strict": true,
+        "baseUrl": ".",
+        "paths": {
+            "@appJson/*": [
+                "app.json"
+            ],
+            "@assets/*": [
+                "./src/assets/*"
+            ],
+            "@components/*": [
+                "./src/components/*"
+            ],
+            "@constants/*": [
+                "./src/constants/*"
+            ],
+            "@contexts/*": [
+                "./src/contexts/*"
+            ],
+            "@hooks/*": [
+                "./src/hooks/*"
+            ],
+            "@routes/*": [
+                "./src/routes/*"
+            ],
+            "@screens/*": [
+                "./src/screens/*"
+            ],
+            "@services/*": [
+                "./src/services/*"
+            ],
+            "@shared/*": [
+                "./src/shared/*"
+            ],
+            "@src/*": [
+                "./src/*"
+            ],
+            "@utils": [
+                "./src/hooks/*"
+            ]
+        }
+    }
 }
